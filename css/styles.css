@@ -498,23 +498,28 @@ p {
   background-color: #e7e9fc;
   border-radius: 50%;
   border: 1px solid rgba(0, 0, 0, 0.1);
+  cursor: pointer;
 
   position: absolute;
-  right: 0;
-  top: 0;
-
-  margin-top: 24px;
-  margin-right: 24px;
+  top: 24px;
+  right: 24px;
 
   display: flex;
   justify-content: center;
   align-items: center;
   width: 24px;
   height: 24px;
+  padding: 0;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .close-icon {
   fill: #2e2f42;
+  width: 8px;
+  height: 8px;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-button-close:hover,
