@@ -429,8 +429,9 @@ p {
 }
 
 .footer-text {
-  color: #f4f4fd;
+  color: #ffffff;
   max-width: 264px;
+  font-weight: 500;
 }
 
 .social-media-text {
@@ -453,7 +454,12 @@ p {
 }
 
 .footer-text.subscribe {
-  margin-bottom: 24px;
+  margin-bottom: 16px;
+}
+
+.footer-form {
+  display: flex;
+  gap: 24px;
 }
 
 .footer-send-button {
