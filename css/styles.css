@@ -591,8 +591,15 @@ p {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.form-comment-section {
+  margin-bottom: 16px;
+}
+
 .form-textarea {
   border: 1px solid rgba(46, 47, 66, 0.4);
+  color: rgba(46, 47, 66, 0.4);
+  background-color: transparent;
+  outline: transparent;
   border-radius: 4px;
   width: 100%;
   min-height: 120px;
@@ -610,6 +617,10 @@ p {
   border-color: #4d5ae5;
 }
 
+.checkbox-container {
+  margin-bottom: 24px;
+}
+
 .form-checkbox-label {
   font-size: 12px;
   line-height: 1.17;
@@ -620,7 +631,7 @@ p {
 .form-checkbox:checked + .form-checkbox-label > .form-custom-checkbox {
   background-color: #404bbf;
   fill: #f4f4fd;
-  border: 1px solid #404bbf;
+  border: none;
 }
 
 .form-custom-checkbox {
@@ -634,6 +645,8 @@ p {
   cursor: pointer;
   fill: transparent;
   margin-right: 8px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .custom-color {
@@ -645,5 +658,5 @@ p {
 
 .modal-button-send {
   display: block;
-  margin: 24px auto 0 auto;
+  margin: auto;
 }
